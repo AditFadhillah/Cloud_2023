@@ -1,0 +1,47 @@
+DCR
+username: hjg708@alumni.ku.dk
+password: globalhopo@dcr
+graphID: 1702945
+simID: 1938005
+
+DCR
+bxz911@alumni.ku.dk
+cloud123
+1702929
+1938534
+
+mySQL
+database: new_schema
+hostname: lectureexcercise201223.mysql.database.azure.com
+username: CloudGroup2
+password: Password123
+
+
+
+TRUNCATE dcrprocesses;
+
+
+INSERT INTO DCRProcesses (GraphID, SimulationID, ProcessName, ProcessDescription) 
+VALUES 
+    (1702945, 1938005, 'Arrival at Home', 'The home care worker arrives at the home.'),
+    (1702945, 1938005, 'Bed Assistance', 'Help the elderly person out of bed.'),
+    (1702945, 1938005, 'Toilet Assistance', 'Help the elderly person to the toilet.'),
+    (1702945, 1938005, 'Out of Bed', 'The elderly person is already out of bed.'),
+    (1702945, 1938005, 'Decline Toilet Help', 'The elderly person states it is not necessary to be helped to the toilet.'),
+    (1702945, 1938005, 'Dirty Dishes', 'There are dirty dishes.'),
+    (1702945, 1938005, 'Dishwashing', 'Put the dishes in the dishwasher.');
+
+
+"INSERT INTO DCRProcesses (GraphID, SimulationID, ProcessName) VALUES (%s, %s, '');", (self.graph_id, self.sim_id)
+
+
+"INSERT INTO DCRProcesses (GraphID, SimulationID, ProcessName) VALUES (f"({self.graph_id})", f"({self.graph_id})", 'ja ba da ba do');"
+
+
+
+
+
+
+
+
+
